@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="موقع ويب عربي تفاعلي يقدم خدمات متميزة بتصميم عصري وأنيق">
+    <meta name="keywords" content="موقع عربي، خدمات، تصميم، تطوير">
+    <meta name="author" content="فريق التطوير العربي">
+    
+    <title>الموقع العربي التفاعلي</title>
+    
+    <!-- خطوط Google العربية -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- الأنماط الرئيسية -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.svg" alt="شعار الموقع" class="logo-img">
+                <span class="logo-text">الموقع العربي</span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">من نحن</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">خدماتنا</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">اتصل بنا</a>
+                </li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title fade-in">أهلاً وسهلاً بكم في موقعنا العربي</h1>
+                <p class="hero-subtitle fade-in">نقدم لكم أفضل الخدمات بجودة عالية وتصميم عصري يلبي احتياجاتكم</p>
+                <div class="hero-buttons fade-in">
+                    <button class="btn btn-primary" onclick="scrollToSection('services')">
+                        <i class="fas fa-star"></i>
+                        اكتشف خدماتنا
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-phone"></i>
+                        تواصل معنا
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>سرعة وإبداع</h3>
+                    <p>نحقق أهدافكم بسرعة</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- مؤشر التمرير -->
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- قسم من نحن -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">من نحن</h2>
+                <p class="section-subtitle">نحن فريق من المحترفين المتخصصين في تقديم أفضل الحلول</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>رؤيتنا</h3>
+                    <p>نسعى لأن نكون الخيار الأول في تقديم الخدمات المتميزة التي تلبي توقعات عملائنا وتتجاوزها.</p>
+                    
+                    <h3>مهمتنا</h3>
+                    <p>نلتزم بتقديم حلول مبتكرة وعالية الجودة مع الحفاظ على أعلى معايير الخدمة والاحترافية.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="500">0</span>
+                            <span class="stat-label">عميل راضٍ</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="100">0</span>
+                            <span class="stat-label">مشروع مكتمل</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">سنوات خبرة</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>فريق محترف</h4>
+                        <p>فريق من الخبراء المتخصصين في مختلف المجالات</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>جودة مضمونة</h4>
+                        <p>نضمن لك أعلى مستويات الجودة في جميع خدماتنا</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>سرعة في التنفيذ</h4>
+                        <p>نلتزم بالمواعيد المحددة ونسلم في الوقت المناسب</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">خدماتنا</h2>
+                <p class="section-subtitle">نقدم مجموعة متنوعة من الخدمات المتخصصة</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>تطوير المواقع</h3>
+                    <p>نصمم ونطور مواقع ويب حديثة ومتجاوبة تناسب جميع الأجهزة</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> تصميم متجاوب</li>
+                        <li><i class="fas fa-check"></i> تحسين لمحركات البحث</li>
+                        <li><i class="fas fa-check"></i> سرعة في التحميل</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>تطبيقات الهاتف</h3>
+                    <p>نطور تطبيقات ذكية للهواتف تعمل على أنظمة iOS وAndroid</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> تصميم سهل الاستخدام</li>
+                        <li><i class="fas fa-check"></i> أداء عالي</li>
+                        <li><i class="fas fa-check"></i> متوافق مع جميع الأجهزة</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>التصميم الجرافيكي</h3>
+                    <p>نصمم هويات بصرية وشعارات احترافية تعبر عن علامتك التجارية</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> تصميم إبداعي</li>
+                        <li><i class="fas fa-check"></i> جودة عالية</li>
+                        <li><i class="fas fa-check"></i> تسليم سريع</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>التسويق الرقمي</h3>
+                    <p>نساعدك في الوصول لجمهورك المستهدف عبر استراتيجيات تسويقية فعالة</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> وسائل التواصل الاجتماعي</li>
+                        <li><i class="fas fa-check"></i> حملات إعلانية</li>
+                        <li><i class="fas fa-check"></i> تحليل النتائج</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">اتصل بنا</h2>
+                <p class="section-subtitle">نحن هنا للإجابة على جميع استفساراتكم</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>معلومات التواصل</h3>
+                    <p>لا تترددوا في التواصل معنا في أي وقت</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>العنوان</h4>
+                            <p>الرياض، المملكة العربية السعودية</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>الهاتف</h4>
+                            <p>+966 50 123 4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>البريد الإلكتروني</h4>
+                            <p>info@arabicsite.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>تابعونا على</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <h3>أرسل لنا رسالة</h3>
+                    
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل *</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">الموضوع *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">اختر الموضوع</option>
+                            <option value="web-development">تطوير المواقع</option>
+                            <option value="mobile-apps">تطبيقات الهاتف</option>
+                            <option value="graphic-design">التصميم الجرافيكي</option>
+                            <option value="digital-marketing">التسويق الرقمي</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                        <div class="error-message" id="subject-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">الرسالة *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="اكتب رسالتك هنا..."></textarea>
+                        <div class="error-message" id="message-error"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        إرسال الرسالة
+                    </button>
+                    
+                    <div class="form-status" id="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.svg" alt="شعار الموقع" class="logo-img">
+                        <span class="logo-text">الموقع العربي</span>
+                    </div>
+                    <p>نحن ملتزمون بتقديم أفضل الخدمات وأعلى مستويات الجودة لعملائنا الكرام.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>خدماتنا</h4>
+                    <ul>
+                        <li><a href="#">تطوير المواقع</a></li>
+                        <li><a href="#">تطبيقات الهاتف</a></li>
+                        <li><a href="#">التصميم الجرافيكي</a></li>
+                        <li><a href="#">التسويق الرقمي</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> الرياض، السعودية</p>
+                        <p><i class="fas fa-phone"></i> +966 50 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@arabicsite.com</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 الموقع العربي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- سكريبت JavaScript -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
